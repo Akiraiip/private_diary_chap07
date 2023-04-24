@@ -4,7 +4,7 @@
     background-position: center top;
 }
 #home {
-    background-image: url(../asettes/images/main-bg.jpg);
+    background-image: url('../assets/images/main-bg.jpg');
     min-height: 100vh;
 }
 #home .page-title {
@@ -14,7 +14,10 @@ html {
     font-size: 100%;
 }
 body{
-    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    font-family: "Yu Gothic Medium",
+    "游ゴシック Medium", YuGothic,
+    "游ゴシック体", "ヒラギノ角ゴ Pro W3",
+    sans-serif;
     line-height: 1.7;
     color: #432;
 }
