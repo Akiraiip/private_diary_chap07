@@ -7,7 +7,7 @@
     background-image: url('../assets/images/main-bg.jpg');
     min-height: 100vh;
 }
-#home .page-title {
+#home .page-title { 
     text-transform: none;
 }
 html {
