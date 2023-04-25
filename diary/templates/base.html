@@ -1,5 +1,5 @@
 {% load static %}
-
+{% load bootstrap4 %}
 <html lang="ja">
   <head>
     <meta charset="utf-8">
@@ -36,6 +36,9 @@
           type="text/css"
           href="{% static 'css/common.css' %}">
     <!-- jQuery CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/3-3-1.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/3-3-1.css' %}">
     <link rel="stylesheet"
           type="text/css"
           href="{% static 'css/fadeout.css' %}">
@@ -52,6 +55,9 @@
         foreground-color: #333333;
     }
     </style>
+
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='full' %}
   </head>
   <body>
 <!--    <div id = splash>-->
@@ -59,6 +65,18 @@
 <!--        <div class = "loader_cover loader_cover-up"></div>-->
 <!--        <div class = "loader_cover loader_cover-down"></div>-->
 <!--    </div>-->
+    <div id="splash">
+		<div id="splash_logo">
+            <img src="img/loading.svg" alt="" class="fadeUp">
+        </div>
+	</div>
+
+<!--	<main>-->
+<!--        <div id="container">-->
+<!--		<p>ローディング後、この画面が見えます。</p>-->
+<!--        &lt;!&ndash;/container&ndash;&gt;</div>-->
+<!--	</main>-->
+    <div class="box fadeUpTrigger">画面が読み込まれたらふわっ（下から）</div>
     <!--<div id="wrapper">  -->
     <div id="home" class="big-bg" >
         <!-- <div id = "container"> -->
@@ -163,14 +181,19 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>-->
     <!-- jQuery-->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
+<!--    <script src="{% static 'jquery-3.6.0.min.js' %}"></script>-->
+<!--    <script src="https://code.jquery.com/jquery-3.4.1.min.js"-->
+<!--            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="-->
+<!--            crossorigin="anonymous"></script>-->
+    {% bootstrap_javascript %}
     <!-- ProgressBar jQuery ? ajax?-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
     <script src="{% static 'js/fadeout.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="{% static 'js/3-3-1.js' %}"></script>
+    <script src="{% static 'js/4-1-4.js' %}"></script>
   </body>
 </html>
 

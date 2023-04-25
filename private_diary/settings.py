@@ -28,6 +28,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'diary.apps.DiaryConfig',
+
+    'bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -54,6 +56,10 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'builtins': [  # この箇所を追記します
+                'bootstrap4.templatetags.bootstrap4',  # この箇所を追記します
+                # 'bootstrap4'
+            ],  # この箇所を追記します
         },
     },
 ]
