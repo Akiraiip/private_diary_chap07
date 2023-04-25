@@ -57,7 +57,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
             ],
             'builtins': [  # この箇所を追記します
-                'bootstrap4.templatetags.bootstrap4',   # この箇所を追記します
+                'bootstrap4.templatetags.bootstrap4',    # この箇所を追記します
                 # 'bootstrap4'
             ],  # この箇所を追記します
         },
