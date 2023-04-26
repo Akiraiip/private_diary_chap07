@@ -1,10 +1,10 @@
-var my_variable = "Hello, World!";
-$('globalBtn').click(function() {
-    console.log(my_variable);
-});
+//var my_variable = "Hello, World!";
+//$('globalBtn').click(function() {
+//    console.log(my_variable);
+//});
 //import ProgressBar from 'progressbar.js';
 //テキストのカウントアップ+バーの設定
-let bar = new ProgressBar.Line(splash_text, {//id名を指定
+var bar = new ProgressBar.Line(splash_text, {//id名を指定
 	easing: 'easeInOut',//アニメーション効果linear、easeIn、easeOut、easeInOutが指定可能
 	duration: 1000,//時間指定(1000＝1秒)
 	strokeWidth: 0.2,//進捗ゲージの太さ
