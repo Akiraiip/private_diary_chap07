@@ -98,6 +98,41 @@
             <div class="globalBtn__line globalBtn__line-2"></div>
             <div class="globalBtn__line globalBtn__line-3"></div>
         </div>
+        <div id="global" class="global">
+            <div class="global__inner">
+              <nav class="global__wrap">
+                <ul class="global__menu">
+                  <li class="global__menu__list global__menu__list-home is-current" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                    <a href="#home" data-page-index="0"><span class="global__menu__list__thumb global__menu__list__thumb-home"></span><span class="global__menu__list__text">HOME</span></a>
+                  </li>
+                  <li class="global__menu__list global__menu__list-about" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                    <a href="#about" data-page-index="1"><span class="global__menu__list__thumb global__menu__list__thumb-about"></span><span class="global__menu__list__text">ABOUT</span></a>
+                  </li>
+                  <li class="global__menu__list global__menu__list-photograph" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                    <a href="#photograph" data-page-index="2"><span class="global__menu__list__thumb global__menu__list__thumb-photograph"></span><span class="global__menu__list__text">PHOTOGRAPH</span></a>
+                  </li>
+                  <li class="global__menu__list global__menu__list-movie" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                    <a href="#movie" data-page-index="3"><span class="global__menu__list__thumb global__menu__list__thumb-movie"></span><span class="global__menu__list__text">MOVIE</span></a>
+                  </li>
+                  <li class="global__menu__list global__menu__list-member" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                    <a href="#member" data-page-index="4"><span class="global__menu__list__thumb global__menu__list__thumb-member"></span><span class="global__menu__list__text">MEMBER</span></a>
+                  </li>
+                  <li class="global__menu__list global__menu__list-contact" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                    <a href="#contact" data-page-index="5"><span class="global__menu__list__thumb global__menu__list__thumb-contact"></span><span class="global__menu__list__text">CONTACT</span></a>
+                  </li>
+                </ul>
+                <ul class="global__sns" style="opacity: 1;">
+                  <li class="global__sns__list global__sns__list-facebook">
+                    <a href="https://www.facebook.com/kattinc.photo.movie" target="_blank"><img src="/img/common/icon-fb.svg" width="12" alt="facebook"></a></li>
+                  <li class="global__sns__list global__sns__list-instagram">
+                    <a href="https://www.instagram.com/kattinc.works/" target="_blank"><img src="/img/common/icon-insta.svg" width="24" alt="instagram"></a></li>
+                  <li class="global__sns__list global__sns__list-vimeo">
+                    <a href="https://vimeo.com/kattinc" target="_blank"><img src="/img/common/icon-vimeo.svg" width="21" alt="vimeo"></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+        </div>
         <!-- 右側インジケータ― -->
         <div class="indicator is-disable" style="opacity: 1;">
             <div class="indicator__inner">
@@ -182,7 +217,7 @@
 <!--    {% bootstrap_css %}-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/progressbar.js@1.1.0/dist/progressbar.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>-->
 <!--    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
 <!--    {% include 'material/includes/material_css.html' %}-->
 <!--    {% include 'material/includes/material_js.html' %}-->
@@ -190,6 +225,7 @@
     <script>jQuery(function() { console.log("Hello World!!"); });</script>
     <!-- ProgressBar jQuery ? ajax?-->
 <!--    <script src="{% static 'js/fadeout.js' %}"></script>-->
+    <!-- ＠＠＠＠＠＠重要ポイント＠＠＠＠＠＠＠＠＠＠ js file でモジュールを宣言している場合、type="module" が必須  -->
     <script type="module" src="{% static 'js/fadeout.js' %}"></script>
     <script src="{% static 'js/3-3-1.js' %}"></script>
     <script src="{% static 'js/4-1-4.js' %}"></script>
