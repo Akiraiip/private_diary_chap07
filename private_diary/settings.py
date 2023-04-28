@@ -30,7 +30,7 @@ INSTALLED_APPS = [
     'diary.apps.DiaryConfig',
 
     'bootstrap4',
-    # 'material',
+    'material',
 ]
 
 MIDDLEWARE = [
