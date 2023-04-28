@@ -1154,7 +1154,7 @@ a {
 }
 .globalBtn:after {
   content: "";
-  border: 2px solid #fff;
+  border: 2px solid #ccc;
   border-radius: 50%;
   position: absolute;
   top: 0;
@@ -1188,7 +1188,7 @@ a {
 }
 
 .globalBtn__line {
-  background: #fff;
+  background: #CCC;
   width: 20px;
   height: 2px;
   position: absolute;
