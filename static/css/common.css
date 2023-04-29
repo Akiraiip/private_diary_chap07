@@ -1213,7 +1213,8 @@ a {
   top: 29px;
 }
 
-.globalBtn.is-open {
+/*.globalBtn.is-open {*/
+.globalBtn.active{
   transition: background-color ease 0.3s, border-color ease 0.3s;
 }
 .globalBtn.is-open:after {

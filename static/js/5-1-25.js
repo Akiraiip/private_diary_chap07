@@ -1,6 +1,7 @@
 //$(".openbtn").click(function () {//ボタンがクリックされたら
 $(".globalBtn").click(function () {//ボタンがクリックされたら
 	$(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+//    is-open
     $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
     $("#header,#home").toggleClass('mainblur');//ぼかしたいエリアにmainblurクラスを付与
 });
