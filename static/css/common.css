@@ -1214,7 +1214,8 @@ a {
 }
 
 /*.globalBtn.is-open {*/
-.globalBtn.active{
+/*.globalBtn.active{*/
+.globalBtn.is-open{
   transition: background-color ease 0.3s, border-color ease 0.3s;
 }
 .globalBtn.is-open:after {
@@ -3239,7 +3240,7 @@ a {
     width: 4.27vw;
   }
   .globalBtn:hover .globalBtn__line-3, .globalBtn.hover .globalBtn__line-3 {
-    width: 5.33vw;
+    width: 10.33vw;
   }
 
   .globalBtn__line {
