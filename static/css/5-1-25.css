@@ -72,7 +72,7 @@
 }
 
 /*========= ボタンのためのCSS ===============*/
-.openbtn{
+.globalBtn{
 	position:fixed;
     z-index: 9999;/*ボタンを最前面に*/
 	top:10px;
@@ -83,7 +83,7 @@
 }
 	
 /*×に変化*/	
-.openbtn span{
+.globalBtn span{
     display: inline-block;
     transition: all .4s;
     position: absolute;
@@ -94,30 +94,30 @@
   	width: 45%;
   }
 
-.openbtn span:nth-of-type(1) {
+.globalBtn span:nth-of-type(1) {
 	top:15px;	
 }
 
-.openbtn span:nth-of-type(2) {
+.globalBtn span:nth-of-type(2) {
 	top:23px;
 }
 
-.openbtn span:nth-of-type(3) {
+.globalBtn span:nth-of-type(3) {
 	top:31px;
 }
 
-.openbtn.active span:nth-of-type(1) {
+.globalBtn.active span:nth-of-type(1) {
     top: 18px;
     left: 18px;
     transform: translateY(6px) rotate(-45deg);
     width: 30%;
 }
 
-.openbtn.active span:nth-of-type(2) {
+.globalBtn.active span:nth-of-type(2) {
 	opacity: 0;
 }
 
-.openbtn.active span:nth-of-type(3){
+.globalBtn.active span:nth-of-type(3){
     top: 30px;
     left: 18px;
     transform: translateY(-6px) rotate(45deg);
