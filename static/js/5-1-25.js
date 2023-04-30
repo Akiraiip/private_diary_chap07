@@ -15,7 +15,7 @@ $("#g-nav a").click(function () {//ナビゲーションのリンクがクリッ
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスを除去し
 //    $("#globalBtn").removeClass('panelBtn');//ナビゲーションのpanelBtnクラスを除去し
     $("#header,#home").removeClass('mainblur');//ぼかしているエリアのmainblurクラスを除去
-});
+}); 
 
 //$(".globalBtn").click(function () {
 //    $(this).toggleClass('is-open');
