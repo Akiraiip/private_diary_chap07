@@ -1,8 +1,9 @@
-//$(".openbtn").click(function () {//ボタンがクリックされたら
-$(".globalBtn").click(function () {//ボタンがクリックされたら
+$(".openbtn").click(function () {//ボタンがクリックされたら
+//$(".globalBtn").click(function () {//ボタンがクリックされたら
 //    is-open
-//	$(this).toggleClass('is-open');//ボタン自身に is-openを付与
 	$(this).toggleClass('active');//ボタン自身に activeクラスを付与
+	$(this).toggleClass('after');//ボタン自身に activeクラスを付与
+	$(this).toggleClass('is-open');//ボタン自身に is-openを付与
 
     $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
 //    $("#globalBtn").toggleClass('panelBtn');//ナビゲーションにpanelBtnクラスを付与
@@ -10,12 +11,15 @@ $(".globalBtn").click(function () {//ボタンがクリックされたら
 });
 
 $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
-    $(".globalBtn").removeClass('active');//ボタンの activeクラスを除去し
+    $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
+    $(".openbtn").removeClass('after');//ボタンの activeクラスを除去し
+    $(".openbtn").removeClass('is-open');//ボタンの is-openクラスを除去し
+//    $(".globalBtn").removeClass('active');//ボタンの activeクラスを除去し
 //    $(".globalBtn").removeClass('is-open');//ボタンの is-openクラスを除去し
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスを除去し
 //    $("#globalBtn").removeClass('panelBtn');//ナビゲーションのpanelBtnクラスを除去し
     $("#header,#home").removeClass('mainblur');//ぼかしているエリアのmainblurクラスを除去
-}); 
+});
 
 //$(".globalBtn").click(function () {
 //    $(this).toggleClass('is-open');

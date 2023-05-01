@@ -1,7 +1,7 @@
-var my_variable = "Hello, World!";
-$('globalBtn').click(function() {
-    console.log(my_variable);
-});
+//var my_variable = "Hello, World!";
+//$('globalBtn').click(function() {
+//    console.log(my_variable);
+//});
 //import ProgressBar from 'progressbar.js';
 //テキストのカウントアップ+バーの設定
 let bar = new ProgressBar.Line(splash_text, {//id名を指定

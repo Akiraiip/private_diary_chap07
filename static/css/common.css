@@ -3226,6 +3226,18 @@ a {
     top: 4vw;
     right: 4vw;
   }
+    /* ==============================================
+    プログレスバーより、上部に表示される為、対策中
+   * ============================================== */
+  .globalBtn.active .globalBtn__line {
+    background-color: #fff;
+  }
+  #splash_text {
+    display: none;
+  }
+
+    /* ==============================================
+   * ============================================== */
   .globalBtn:hover, .globalBtn.hover {
     transition: background-color ease 0.3s;
   }

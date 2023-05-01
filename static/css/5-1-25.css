@@ -84,6 +84,7 @@
 	
 /*×に変化*/	
 .globalBtn span{
+    opacity: 0; /*とりあえず、透明色で消した。*/
     display: inline-block;
     transition: all .4s;
     position: absolute;
