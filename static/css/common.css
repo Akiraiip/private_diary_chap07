@@ -1188,7 +1188,7 @@ a {
 }
 
 .globalBtn__line {
-  background: #CCC;
+  background: #ccc;
   width: 20px;
   height: 2px;
   position: absolute;
@@ -3249,7 +3249,7 @@ a {
     width: 3.2vw;
   }
   .globalBtn:hover .globalBtn__line-2, .globalBtn.hover .globalBtn__line-2 {
-    width: 4.27vw;
+    width: 4.0vw;
   }
   .globalBtn:hover .globalBtn__line-3, .globalBtn.hover .globalBtn__line-3 {
     width: 7.33vw;
