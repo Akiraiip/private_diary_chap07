@@ -31,12 +31,19 @@ let bar = new ProgressBar.Line(splash_text, {//id名を指定
 
 //アニメーションスタート
 bar.animate(1.0, function () {//バーを描画する割合を指定します 1.0 なら100%まで描画します
-//	$('#openbtn').show();
+	$('#openbtn').addClass("hiden");
 //	$('#globalBtn').show();
-//	$('.openbtn').show();
+	$('.openbtn').addClass("hiden");
+	$('.openbtn__line.openbtn__line-1').addClass("hiden");
 //	$('.globalBtn').show();
 	$("#splash_text").fadeOut(10);//フェードアウトでローディングテキストを削除
 	$(".loader_cover-up").addClass("coveranime");//カバーが上に上がるクラス追加
 	$(".loader_cover-down").addClass("coveranime");//カバーが下に下がるクラス追加
 	$("#splash").fadeOut();//#splashエリアをフェードアウト
+	$('#openbtn').show();
+	$('.openbtn').show();
+    $('#openbtn').removeClass("hiden").show();
+    $('.openbtn').removeClass("hiden").show();
+//    $('.openbtn__line.openbtn__line-1').removeClass("hiden");
+
 });

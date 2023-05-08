@@ -1140,7 +1140,7 @@ a {
  * memo:
  *
  * ============================================== */
-.globalBtn {
+.openbtn {
   width: 40px;
   height: 40px;
   position: fixed;
@@ -1152,7 +1152,7 @@ a {
   cursor: pointer;
   transition: background-color ease 0.3s, border-color ease 0.3s;
 }
-.globalBtn:after {
+.openbtn:after {
   content: "";
   border: 2px solid #ccc;
   border-radius: 50%;
@@ -1167,27 +1167,27 @@ a {
   will-change: opacity;
   transition: 0.2s;
 }
-.globalBtn:hover, .globalBtn.hover {
+.openbtn:hover, .openbtn.hover {
   transition: background-color ease 0.3s;
 }
-.globalBtn:hover:after, .globalBtn.hover:after {
+.openbtn:hover:after, .openbtn.hover:after {
   opacity: 0;
   filter: alpha(opacity=0);
 }
-.globalBtn:hover .globalBtn__line-1, .globalBtn.hover .globalBtn__line-1 {
+.openbtn:hover .openbtn__line-1, .openbtn.hover .openbtn__line-1 {
   width: 12px;
   transition: ease 0.3s;
 }
-.globalBtn:hover .globalBtn__line-2, .globalBtn.hover .globalBtn__line-2 {
+.openbtn:hover .openbtn__line-2, .openbtn.hover .openbtn__line-2 {
   width: 16px;
   transition: ease 0.3s;
 }
-.globalBtn:hover .globalBtn__line-3, .globalBtn.hover .globalBtn__line-3 {
+.openbtn:hover .openbtn__line-3, .openbtn.hover .openbtn__line-3 {
   width: 20px;
   transition: ease 0.3s;
 }
 
-.globalBtn__line {
+.openbtn__line {
   background: #ccc;
   width: 20px;
   height: 2px;
@@ -1200,62 +1200,67 @@ a {
   pointer-events: none;
 }
 
-.globalBtn__line-1 {
+.openbtn__line-1 {
   top: 13px;
+  display: block;
 }
 
-.globalBtn__line-2 {
+.openbtn__line-1.hiden{
+    display: none;
+}
+
+.openbtn__line-2 {
   top: 21px;
 }
 
-.globalBtn__line-3 {
+.openbtn__line-3 {
   width: 12px;
   top: 29px;
 }
 
-/*.globalBtn.is-open {*/
-/*.globalBtn.active{*/
-.globalBtn.is-open{
+/*.openbtn.is-open {*/
+/*.openbtn.active{*/
+.openbtn.is-open{
   transition: background-color ease 0.3s, border-color ease 0.3s;
 }
-.globalBtn.is-open:after {
+.openbtn.is-open:after {
   opacity: 0;
   filter: alpha(opacity=0);
 }
-.globalBtn.is-open .globalBtn__line {
+.openbtn.is-open .openbtn__line {
   width: 50px;
   top: 25px;
   right: 4px;
   height: 2px;
 }
-.globalBtn.is-open .globalBtn__line-1 {
+.openbtn.is-open .openbtn__line-1 {
   transform: rotate(135deg);
   transition: ease 0.3s;
 }
-.globalBtn.is-open .globalBtn__line-2 {
+.openbtn.is-open .openbtn__line-2 {
   opacity: 0;
   filter: alpha(opacity=0);
   transition: ease 0.1s;
 }
-.globalBtn.is-open .globalBtn__line-3 {
+.openbtn.is-open .openbtn__line-3 {
   transform: rotate(-135deg);
   transition: ease 0.3s;
 }
 
-.globalBtn.is-open.hover {
+.openbtn.is-open.hover {
   transition: background ease 0.3s;
 }
 
-.globalBtn.is-open.hover .globalBtn__line-1,
-.globalBtn.is-open.hover .globalBtn__line-3 {
+.openbtn.is-open.hover .openbtn__line-1,
+.openbtn.is-open.hover .openbtn__line-3 {
   transition: ease 0.3s;
 }
 
-.globalBtn.is-open.hover .globalBtn__line-1 {
+.openbtn.is-open.hover .openbtn__line-1 {
   transform: rotate(180deg);
 }
 
-.globalBtn.is-open.hover .globalBtn__line-3 {
+.openbtn.is-open.hover .openbtn__line-3 {
   transform: rotate(-180deg);
 }
 
@@ -1265,9 +1270,11 @@ a {
  * memo:
  *
  * ============================================== */
+ /*これが、.globalが、KATのボタンクリック後のグローバルメニュー*/
 .global {
   font-size: 0;
   display: none;
+  /*display: block;*/
   color: #333333;
   background: rgba(0, 0, 0, 0.9);
   width: 100%;
@@ -3220,16 +3227,21 @@ a {
    * memo:
    *
    * ============================================== */
-  .globalBtn {
+  .openbtn {
     width: 10.67vw;
     height: 10.67vw;
     top: 4vw;
-    right: 4vw; 
+    right: 4vw;
+    display: block;
+  }
+
+  .openbtn.hiden{
+    display: none
   }
     /* ==============================================
     プログレスバーより、上部に表示される為、対策中
    * ============================================== */
-  .globalBtn.active .globalBtn__line {
+  .openbtn.active .openbtn__line {
     background-color: #fff;
   }
   #splash_text {
@@ -3238,57 +3250,62 @@ a {
 
     /* ==============================================
    * ============================================== */
-  .globalBtn:hover, .globalBtn.hover {
+  .openbtn:hover, .openbtn.hover {
     transition: background-color ease 0.3s;
   }
-  .globalBtn:hover:after, .globalBtn.hover:after {
+  .openbtn:hover:after, .openbtn.hover:after {
     opacity: 1;
     filter: alpha(opacity=100);
   }
-  .globalBtn:hover .globalBtn__line-1, .globalBtn.hover .globalBtn__line-1 {
+  .openbtn:hover .openbtn__line-1, .openbtn.hover .openbtn__line-1 {
     width: 3.2vw;
   }
-  .globalBtn:hover .globalBtn__line-2, .globalBtn.hover .globalBtn__line-2 {
+  .openbtn:hover .openbtn__line-2, .openbtn.hover .openbtn__line-2 {
     width: 4.0vw;
   }
-  .globalBtn:hover .globalBtn__line-3, .globalBtn.hover .globalBtn__line-3 {
+  .openbtn:hover .openbtn__line-3, .openbtn.hover .openbtn__line-3 {
     width: 7.33vw;
   }
 
-  .globalBtn__line {
+  .openbtn__line {
     width: 5.33vw;
     right: 2.4vw;
+    display : block;
   }
 
-  .globalBtn__line-1 {
+  .openbtn__line.hiden{
+    display: none;
+  }
+
+  .openbtn__line-1 {
     top: 3.47vw;
   }
   //test
 
-  .globalBtn__line-2 {
+  .openbtn__line-2 {
     top: 5.6vw;
   }
 
-  .globalBtn__line-3 {
+  .openbtn__line-3 {
     width: 3.2vw;
     top: 7.73vw;
   }
 
-  .globalBtn.is-open:after {
+  .openbtn.is-open:after {
     opacity: 0;
     filter: alpha(opacity=0);
   }
-  .globalBtn.is-open .globalBtn__line {
+  .openbtn.is-open .openbtn__line {
     width: 7.47vw;
     top: 5.07vw;
     right: 1.07vw;
   }
 
-  .globalBtn.is-open.hover .globalBtn__line-1 {
+  .openbtn.is-open.hover .openbtn__line-1 {
     transform: rotate(135deg);
   }
 
-  .globalBtn.is-open.hover .globalBtn__line-3 {
+  .openbtn.is-open.hover .openbtn__line-3 {
     transform: rotate(-135deg);
   }
 
