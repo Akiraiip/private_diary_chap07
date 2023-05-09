@@ -1151,6 +1151,7 @@ a {
   z-index: 240;
   cursor: pointer;
   transition: background-color ease 0.3s, border-color ease 0.3s;
+  display: block;
 }
 .openbtn:after {
   content: "";
@@ -1202,11 +1203,11 @@ a {
 
 .openbtn__line-1 {
   top: 13px;
-  display: block;
+  display: none;
 }
 
-.openbtn__line-1.hiden{
-    display: none;
+.openbtn__line-1.visible{
+    display: block;
 }
 
 .openbtn__line-2 {
@@ -3270,11 +3271,11 @@ a {
   .openbtn__line {
     width: 5.33vw;
     right: 2.4vw;
-    display : block;
+    display : none;
   }
 
-  .openbtn__line.hiden{
-    display: none;
+  .openbtn__line.visible{
+    display: block;
   }
 
   .openbtn__line-1 {
