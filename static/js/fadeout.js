@@ -42,6 +42,8 @@ bar.animate(1.0, function () {//バーを描画する割合を指定します 1.
 	$("#splash").fadeOut();//#splashエリアをフェードアウト
 //	$('#openbtn').show();
 //	$('.openbtn').show();
+//    $('#openbtn').addclass("visible").show();
+//    $('.openbtn').addclass("visible").show();
 //    $('#openbtn').removeClass("hiden").show();
 //    $('.openbtn').removeClass("hiden").show();
 //    $('.openbtn__line.openbtn__line-1').removeClass("hiden");
@@ -49,20 +51,20 @@ bar.animate(1.0, function () {//バーを描画する割合を指定します 1.
 
 });
 
-// ボタンを非表示にする関数
-function hideButton() {
-  $('#openbtn').addClass("hidden");
-}
-
-// ボタンを表示する関数
-function showButton() {
-  $('#openbtn').removeClass("hidden");
-}
-
-// スクリプトの実行中だけボタンを非表示にする
-hideButton();
-
-// スクリプトの処理が終了したらボタンを表示する
-bar.animate(1.0, function () {
-  showButton();
-});
+//// ボタンを非表示にする関数
+//function hideButton() {
+//  $('#openbtn').addClass("hidden");
+//}
+//
+//// ボタンを表示する関数
+//function showButton() {
+//  $('#openbtn').removeClass("hidden");
+//}
+//
+//// スクリプトの実行中だけボタンを非表示にする
+//hideButton();
+//
+//// スクリプトの処理が終了したらボタンを表示する
+//bar.animate(1.0, function () {
+//  showButton();
+//});

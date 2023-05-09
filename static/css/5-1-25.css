@@ -72,9 +72,11 @@
 }
 
 /*========= ボタンのためのCSS ===============*/
+/*
 .openbtn{
 	position:fixed;
     z-index: 9999;/*ボタンを最前面に*/
+    /*
 	top:11px;
 	right: 10px;
 	cursor: pointer;
@@ -82,9 +84,11 @@
     height:42px;
 }
 	
-/*×に変化*/	
+/*×に変化*/
+/*
 .openbtn span{
     opacity: 0; /*とりあえず、透明色で消した。*/
+    /*
     display: inline-block;
     transition: all .4s;
     position: absolute;
@@ -124,7 +128,7 @@
     transform: translateY(-6px) rotate(45deg);
     width: 30%;
 }
-
+*/
 
 /*========= レイアウトのためのCSS ===============*/
 

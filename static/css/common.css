@@ -1153,6 +1153,9 @@ a {
   transition: background-color ease 0.3s, border-color ease 0.3s;
   display: block;
 }
+.openbtn.visible{
+    display: block;
+}
 .openbtn:after {
   content: "";
   border: 2px solid #ccc;
@@ -1203,7 +1206,7 @@ a {
 
 .openbtn__line-1 {
   top: 13px;
-  display: none;
+  display: block;
 }
 
 .openbtn__line-1.visible{
@@ -3271,7 +3274,7 @@ a {
   .openbtn__line {
     width: 5.33vw;
     right: 2.4vw;
-    display : none;
+    display : block;
   }
 
   .openbtn__line.visible{
@@ -3279,7 +3282,7 @@ a {
   }
 
   .openbtn__line-1 {
-    top: 3.47vw;
+    top: 1.47vw;
   }
   //test
 
