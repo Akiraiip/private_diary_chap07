@@ -1276,23 +1276,32 @@ a {
  * memo:
  *
  * ============================================== */
- /*これが、.globalが、KATのボタンクリック後のグローバルメニュー*/
+ /*これが、.globalが、ボタンクリック後のグローバルメニュー*/
 .global {
   font-size: 0;
   display: none;
   /*display: block;*/
   color: #333333;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 230;
+  /*z-index: 230;*/
+  z-index: 999;
   padding: 0;
   overflow: auto;
+  animation : fadein 1.5s forwards;
+  /*transition: height 0.5s, padding 0.5s;*/
+}
+@keyframes fadein{
+    0%{opacity:0}
+    100%{opacity:1}
 }
 
 .global.active {
   display: block;
+  /*padding: 20px;
+  transition: height 0.5s, padding 0.5s;*/
 }
 
 .global__inner {
