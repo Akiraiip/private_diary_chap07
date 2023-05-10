@@ -1,25 +1,55 @@
-$(".openbtn").click(function () {//ボタンがクリックされたら
-//$(".globalBtn").click(function () {//ボタンがクリックされたら
-//    is-open
-	$(this).toggleClass('active');//ボタン自身に activeクラスを付与
-	$(this).toggleClass('after');//ボタン自身に activeクラスを付与
-	$(this).toggleClass('is-open');//ボタン自身に is-openを付与
-
-    $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
-//    $("#globalBtn").toggleClass('panelBtn');//ナビゲーションにpanelBtnクラスを付与
-    $("#header,#home").toggleClass('mainblur');//ぼかしたいエリアにmainblurクラスを付与
+//$(".openbtn").click(function () {//ボタンがクリックされたら
+////$(".globalBtn").click(function () {//ボタンがクリックされたら
+////    is-open
+//	$(this).toggleClass('active');//ボタン自身に activeクラスを付与
+//	$(this).toggleClass('after');//ボタン自身に activeクラスを付与
+//	$(this).toggleClass('is-open');//ボタン自身に is-openを付与
+//
+//    $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+////    $("#globalBtn").toggleClass('panelBtn');//ナビゲーションにpanelBtnクラスを付与
+//    $("#header,#home").toggleClass('mainblur');//ぼかしたいエリアにmainblurクラスを付与
+//});
+//
+//$("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+//    $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
+//    $(".openbtn").removeClass('after');//ボタンの activeクラスを除去し
+//    $(".openbtn").removeClass('is-open');//ボタンの is-openクラスを除去し
+////    $(".globalBtn").removeClass('active');//ボタンの activeクラスを除去し
+////    $(".globalBtn").removeClass('is-open');//ボタンの is-openクラスを除去し
+//    $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスを除去し
+////    $("#globalBtn").removeClass('panelBtn');//ナビゲーションのpanelBtnクラスを除去し
+//    $("#header,#home").removeClass('mainblur');//ぼかしているエリアのmainblurクラスを除去
+//});
+$("#g-nav a").click(function () {
+    $(".openbtn").removeClass('active');
+    $(".openbtn").removeClass('is-open');
+    $("#g-nav").removeClass('panelactive');
+    $("#header,#home").removeClass('mainblur');
 });
 
-$("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
-    $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
-    $(".openbtn").removeClass('after');//ボタンの activeクラスを除去し
-    $(".openbtn").removeClass('is-open');//ボタンの is-openクラスを除去し
-//    $(".globalBtn").removeClass('active');//ボタンの activeクラスを除去し
-//    $(".globalBtn").removeClass('is-open');//ボタンの is-openクラスを除去し
-    $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスを除去し
-//    $("#globalBtn").removeClass('panelBtn');//ナビゲーションのpanelBtnクラスを除去し
-    $("#header,#home").removeClass('mainblur');//ぼかしているエリアのmainblurクラスを除去
+$("#g-nav-list li:first-child a").click(function () {
+    $(".openbtn").removeClass('active');
+    $(".openbtn").removeClass('is-open');
+    $("#g-nav").removeClass('panelactive');
+    $("#header,#home").removeClass('mainblur');
 });
+$(".openbtn").click(function () {
+    $(this).toggleClass('active');
+    $(this).toggleClass('is-open');
+    $("#g-nav").toggleClass('panelactive');
+    $("#header,#home").toggleClass('mainblur');
+});
+
+//$("#g-nav a").click(function () {
+//    $(".openbtn").removeClass('active');
+//    $(".openbtn").removeClass('is-open');
+//    $("#g-nav").removeClass('panelactive');
+//    $("#header,#home").removeClass('mainblur');
+//});
+
+
+
+
 
 //$(".globalBtn").click(function () {
 //    $(this).toggleClass('is-open');
