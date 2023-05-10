@@ -1222,49 +1222,51 @@ a {
   top: 29px;
 }
 
-/*.openbtn.is-open {*/
+/*.openbtn.active {*/
 /*.openbtn.active{*/
-.openbtn.is-open{
-  transition: background-color ease 0.3s, border-color ease 0.3s;
+.openbtn.active{
+  transition: background-color ease 0.3s,
+  border-color ease 0.3s;
+  z-index:999;
 }
-.openbtn.is-open:after {
+.openbtn.active:after {
   opacity: 0;
   filter: alpha(opacity=0);
 }
-.openbtn.is-open .openbtn__line {
+.openbtn.active .openbtn__line {
   width: 50px;
   top: 25px;
   right: 4px;
   height: 2px;
 }
-.openbtn.is-open .openbtn__line-1 {
+.openbtn.active .openbtn__line-1 {
   transform: rotate(135deg);
   transition: ease 0.3s;
 }
-.openbtn.is-open .openbtn__line-2 {
+.openbtn.active .openbtn__line-2 {
   opacity: 0;
   filter: alpha(opacity=0);
   transition: ease 0.1s;
 }
-.openbtn.is-open .openbtn__line-3 {
+.openbtn.active .openbtn__line-3 {
   transform: rotate(-135deg);
   transition: ease 0.3s;
 }
 
-.openbtn.is-open.hover {
+.openbtn.active.hover {
   transition: background ease 0.3s;
 }
 
-.openbtn.is-open.hover .openbtn__line-1,
-.openbtn.is-open.hover .openbtn__line-3 {
+.openbtn.active.hover .openbtn__line-1,
+.openbtn.active.hover .openbtn__line-3 {
   transition: ease 0.3s;
 }
 
-.openbtn.is-open.hover .openbtn__line-1 {
+.openbtn.active.hover .openbtn__line-1 {
   transform: rotate(180deg);
 }
 
-.openbtn.is-open.hover .openbtn__line-3 {
+.openbtn.active.hover .openbtn__line-3 {
   transform: rotate(-180deg);
 }
 
@@ -1289,7 +1291,7 @@ a {
   overflow: auto;
 }
 
-.global.is-open {
+.global.active {
   display: block;
 }
 
@@ -3247,6 +3249,7 @@ a {
    * ============================================== */
   .openbtn.active .openbtn__line {
     background-color: #fff;
+    z-index:999;
   }
   #splash_text {
     display: none;
@@ -3295,21 +3298,21 @@ a {
     top: 7.73vw;
   }
 
-  .openbtn.is-open:after {
+  .openbtn.active:after {
     opacity: 0;
     filter: alpha(opacity=0);
   }
-  .openbtn.is-open .openbtn__line {
+  .openbtn.active .openbtn__line {
     width: 7.47vw;
     top: 5.07vw;
     right: 1.07vw;
   }
 
-  .openbtn.is-open.hover .openbtn__line-1 {
+  .openbtn.active.hover .openbtn__line-1 {
     transform: rotate(135deg);
   }
 
-  .openbtn.is-open.hover .openbtn__line-3 {
+  .openbtn.active.hover .openbtn__line-3 {
     transform: rotate(-135deg);
   }
 
