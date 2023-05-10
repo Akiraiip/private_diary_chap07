@@ -104,120 +104,92 @@
     </div>
     <div class = "container">
         <section id="home" class="big-bg"  >
-        <!-- Header Display LOGO -->
-        <header class="page-header wrapper">
-            <h1><a href="#">
-                <img class="logo"
-                     src= "{% static 'assets/images/logo.svg' %}"
-                     alt="WCBカフェホーム" >
-                </a>
-            </h1>
-        </header>
-
-        <!-- 右側インジケータ― -->
-        <div class="indicator is-disable" style="opacity: 1;">
-            <div class="indicator__inner">
-              <nav>
-                <ul class="indicator__menu">
-                  <li class="indicator__menu__list indicator__menu__list-home is-current"
-                      style="display: block; transform: matrix(1, 0, 0, 1, 0, 0);">
-                    <a href="#" data-page-index="0"></a>
-                  </li>
-                  <li class="indicator__menu__list indicator__menu__list-about"
-                      style="display: block; transform: matrix(1, 0, 0, 1, 0, 0);">
-                      <a href="#" data-page-index="1"></a>
-                  </li>
-                  <li class="indicator__menu__list indicator__menu__list-photograph"
-                      style="display: block; transform: matrix(1, 0, 0, 1, 0, 0);">
-                    <a href="#" data-page-index="2"></a>
-                  </li>
-                  <li class="indicator__menu__list indicator__menu__list-movie"
-                      style="display: block; transform: matrix(1, 0, 0, 1, 0, 0);">
-                      <a href="#" data-page-index="3"></a>
-                  </li>
-                  <li class="indicator__menu__list indicator__menu__list-member"
-                      style="display: block; transform: matrix(1, 0, 0, 1, 0, 0);">
-                      <a href="#" data-page-index="4"></a>
-                  </li>
-                  <li class="indicator__menu__list indicator__menu__list-contact"
-                      style="display: block; transform: matrix(1, 0, 0, 1, 0, 0);">
-                      <a href="#contact" data-page-index="5"></a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-        </div>
-        <!--  {% block header%}{% endblock %}  {% block contents%}{% endblock %}  -->
-        <div class="home__footer" style="display: block; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
-          <div class="home__topics">
-            <div class="home__topics__title">INFORMATION</div>
-            <div class="home__topics__entries">
-                <div class="home__topics__entry"
-                     style="width: 305.906px; opacity: 1;">
-                    <span class="home__topics__entry__outer">
-                        <span class="home__topics__entry__inner">
-                            <time datetime="2020.04.08"
-                                  class="home__topics__entry__time">2023.04.24
-                            </time>LATTE ART open
-                        </span>
-                    </span>
-                </div>
-                <div class="home__topics__entry"
-                     style="display: none; width: 447.047px; opacity: 0;">
-                    <span class="home__topics__entry__outer">
-                        <span class="home__topics__entry__inner">
-                            <time datetime="2020.04.01"
-                                  class="home__topics__entry__time">----
-                            </time>comment2
-                        </span>
-                    </span>
+            <!-- Header Display LOGO -->
+            <header class="page-header wrapper">
+                <h1><a href="#">
+                    <img class="logo"
+                         src= "{% static 'assets/images/logo.svg' %}"
+                         alt="WCBカフェホーム" >
+                    </a>
+                </h1>
+            </header>
+            <!-- 右側インジケータ― -->
+            <div class="indicator is-disable" style="opacity: 1;">
+                <div class="indicator__inner">
+                  <nav>
+                    <ul class="indicator__menu">
+                      <li class="indicator__menu__list indicator__menu__list-home is-current"
+                          style="display: block; transform: matrix(1, 0, 0, 1, 0, 0);">
+                        <a href="#home" data-page-index="0"></a>
+                      </li>
+                      <li class="indicator__menu__list indicator__menu__list-about"
+                          style="display: block; transform: matrix(1, 0, 0, 1, 0, 0);">
+                          <a href="#about" data-page-index="1"></a>
+                      </li>
+                      <li class="indicator__menu__list indicator__menu__list-photograph"
+                          style="display: block; transform: matrix(1, 0, 0, 1, 0, 0);">
+                        <a href="#" data-page-index="2"></a>
+                      </li>
+                      <li class="indicator__menu__list indicator__menu__list-movie"
+                          style="display: block; transform: matrix(1, 0, 0, 1, 0, 0);">
+                          <a href="#" data-page-index="3"></a>
+                      </li>
+                      <li class="indicator__menu__list indicator__menu__list-member"
+                          style="display: block; transform: matrix(1, 0, 0, 1, 0, 0);">
+                          <a href="#" data-page-index="4"></a>
+                      </li>
+                      <li class="indicator__menu__list indicator__menu__list-contact"
+                          style="display: block; transform: matrix(1, 0, 0, 1, 0, 0);">
+                          <a href="#contact" data-page-index="5"></a>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
             </div>
-          </div>
-        </div>
-    </section>
+            <!--  {% block header%}{% endblock %}  {% block contents%}{% endblock %}  -->
+            <div class="home__footer" style="display: block; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+              <div class="home__topics">
+                <div class="home__topics__title">INFORMATION</div>
+                <div class="home__topics__entries">
+                    <div class="home__topics__entry"
+                         style="width: 305.906px; opacity: 1;">
+                        <span class="home__topics__entry__outer">
+                            <span class="home__topics__entry__inner">
+                                <time datetime="2020.04.08"
+                                      class="home__topics__entry__time">2023.04.24
+                                </time>LATTE ART open
+                            </span>
+                        </span>
+                    </div>
+                    <div class="home__topics__entry"
+                         style="display: none; width: 447.047px; opacity: 0;">
+                        <span class="home__topics__entry__outer">
+                            <span class="home__topics__entry__inner">
+                                <time datetime="2020.04.01"
+                                      class="home__topics__entry__time">----
+                                </time>comment2
+                            </span>
+                        </span>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </section>
         <section id="about" data-page-index="1" class="about page">
-    <div class="splash about__splash scrollable">
-      <div class="splash__inner">
-        <h2 class="splash__title about__splash__title">ABOUT</h2>
-
+            <div class="splash about__splash scrollable">
+              <div class="splash__inner">
+                <h2 class="splash__title about__splash__title">ABOUT</h2>
                 <p class="splash__about__lead pc">
-          <span class="pc">「焼き付ける」。<br>
-わたしたちKATTが、<br>
-写真・映像チームとして<br>
-こだわっていること。<br>
-記憶であれ記録であれ、<br>
-見る人の胸に、<br>
-脳裏に、「焼き付ける」。<br>
-<br>
-会社にする前からすでに<br>
-15年以上も共に<br>
-響く、笑える、泣ける<br>
-一枚とシーンを求めて<br>
-培ってきた経験・技術を基に<br>
-お望み通りか、もしくは、<br>
-いい意味での裏切りの“カット”<br>
-お届けします。</span>
-          <span class="sp">「焼き付ける」。<br>
-わたしたちKATTが、<br>
-写真・映像チームとして<br>
-こだわっていること。<br>
-記憶であれ記録であれ、<br>
-見る人の胸に、<br>
-脳裏に、「焼き付ける」。<br>
-<br>
-会社にする前からすでに<br>
-15年以上も共に<br>
-響く、笑える、泣ける<br>
-一枚とシーンを求めて<br>
-培ってきた経験・技術を基に<br>
-お望み通りか、もしくは、<br>
-いい意味での裏切りの“カット”<br>
-お届けします。</span>
-        </p>
-      </div>
-    </div>
-  </section>
+                    <span class="pc">「焼き付ける」。<br>
+                        わたしたちxxx deth<br>
+                    </span>
+                    <span class="sp">「焼き付ける」。<br>
+                        わたしたちxxx deth<br>
+                    </span>
+                </p>
+              </div>
+            </div>
+          </section>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
