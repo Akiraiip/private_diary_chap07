@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+#splash{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    text-align: center;
+    color: #fff;
+}
+
+#splash_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 100%;
+}
+
+.loader_cover{
+    width: 100%;
+    height: 50%;
+    background: #017490;
+    transition: all .2s cubic-bezier(.04, .43 .315 .9);
+    transform: scaleY(1);
+}
+
+.loader_cover-up{
+    transform-origin: center top;
+}
+
+.loader_cover-down{
+    position : absolute;
+    bottom: 0;
+    transform-origin: center bottom;
+}
+
+.coveranime{
+    transform: scaleY(0);
+}
+
+.gradient4{
+    display: inline-block;
+    padding: 10px 60px;
+    margin: 20px 0 0 0;
+    border-radius: 30px
+    text-decoration: none;
+    border: #fff;
+    color: #fff;
+    transition: all 0.4s ease-out;
+}
+
+#box3 .gradient4{
+    color: #925410;
+    border-color: #925410;
+}
+
+.gradient4:hover, #box3 .gradient4:hover{
+    border-color:
+    color:
+    background:
+    background-size:
+    background-position:
+
+}
+
+#slider{
+
+}
+
+.modaal-overlay{
+
+}
+
+.hide-area{
+
+}
+
+.modaal-fullscreen .modaal-content-container{
+
+}
+
+.modaal-fullscreen .modaal-close{
+
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+
+}
+
+.caption{
+
+}
+
+.modaal-content-container img{
+
+}
+
+.blur{
+
+}
+
+@keyframes blurAnime{
+    from{
+
+    }
+    to{
+
+    }
+}
+
+.blurTringger{
+
+}
+
+.eachTextAnime span{opacity: 0}
+.eachTextAnime.appeartext span{ animation: text_anime_on 1s ease-out forward;}
+@keyframes text_anime_on{
+
+}
+.box{
+
+}
+#box1{
+
+}
+
+#box1.box{
+
+}
+
+@media screen and (max-width:768px){
+
+}
+
+#box2{
+
+}
+#box3{
+
+}
+#box4{
+
+}
+#box5{
+
+}
+.pagination{
+
+}
+.pagination a {
+
+}
+.pagination a.active:after{
+
+}
+.pagination a.hover-text{
+
+}
+.pagination a:after{
+
+}
+@media screen and (max-width:768px){
+    .pagination a . hover-text{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
