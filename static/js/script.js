@@ -217,67 +217,7 @@ bar.animate(1.0, function () {//バーを描画する割合を指定します 1.
 
 	EachTextAnimeControl();//印象編 8-11テキストが1文字づつ出現の関数を呼ぶ
     fadeAnime();//印象編 4 最低限おぼえておきたい動きの関数を呼ぶ
-abcdefghijkomn
-abcderg
-abcdefghijklmno-
-abcdefghijkomn
-abcdefghijklmnopqrsty
-abddefghijklmnopqrstuvwxyz
-abcdefghijko
-abcdefghijklmno-p
-abcdefghijklmnopqrstuvwxyz
-abdef
-abcdefghijklmno-
-abcdefghijklmnopqrstuvwxyz
-abcdefghijklmnopqstr
-abcdefghji
-abcdefghijklmnopqs
-abcdefghijklmnopqstuvwxyz
-av
-abcdefghijklmno-
-abcdefghijklmnopqstru
-abcdedfghijklmnopqstu
-abcdefghijkomn
-abcdedfghijklmnopqstu
-hijklmnl
-abcdefghji
-hj
-hijkom
-j
-hijko
-hik
-hijklmnop
-hijklmno
-hijklmno
-j
-hijklmno
-hijklmno
-hijklmno
-abcdefghijklmnopqrstuvwxyz
-abcdefghijkomn
-abcdefghijklmno-
-abcdefghijklmnopqs
-abcdefghijklmnopqstuvwxyz
-abcdefghijko
-abd
-abcdefghijklmnopqrstuve
-abcdefghijkom
-abcdefghjikom
-abcdefghijko
-abcdefghijklmnop
-abcdefghijklmno-
-abcdefghijklmnopqrstuvwxyz
-abcdefghijklmnopqstuvwxyz
-abcdefghijklmnopqrstuvwxyz
-opqrstu
-opqs
-opqrstu
-opqsr
-opqrstu
-opqrstu
-opqrstu
-opqrstu
-opqrstu
+
 
 
     }); //=====ここまでローディングエリア（splashエリア）を0.8秒でフェードアウトした後に動かしたいJSをまとめる

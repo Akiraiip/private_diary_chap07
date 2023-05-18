@@ -1,133 +1,151 @@
-@charset "utf-8"
+@charset "utf-8";
+/* レイアウトのためのCSS */
 
 body{
-    background: #f0f0f0;
-    font-family: 'Baskervville', serif, "游ゴシック", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
-    color: #333;
-    font-size:1rem;
-    line-height:1.85;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-    word-wrap: break-word;
+    background:#f0f0f0;
+    font-family:'Baskervville', serif,"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+	color: #333;
+	font-size:1rem;
+	line-height:1.85;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%; 
+	word-wrap: break-word;
 }
 
-@media screen and (max-width:768px){
-    body{
-        font-size:0.8rem;
-    }
+@media screen and (max-width:768px) {
+body{
+	font-size:0.8rem;
+	}
 }
 
 ul{
-    margin:0;
-    padding:0;
-    list-style: none;
+	margin:0;
+	padding: 0;
+	list-style: none;
 }
 
 a{
-    color: #fff;
+	color: #fff;
     outline: none;
 }
 
-a:hover
+a:hover,
 a:active{
-    text-decoration: none;
+	text-decoration: none;
 }
+
+/* heading */
 
 .heading-block{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
     color: #fff;
-    text-aling: center;
+    text-align: center;
 }
 
-.h2{
-    font-familly: 'La Belle Aurore', cursive;
+.heading-block h1,
+h2{
+    font-family: 'La Belle Aurore', cursive;
     font-weight: normal;
-    font-size: 6vw;
+    font-size:6vw;
     line-height: 1;
     letter-spacing: 0.05em;
     color: #fff;
 }
 
 .heading-block p{
-    font-size: 1.2vw;
+    font-size:1.2vw;
     letter-spacing: 0.5em;
 }
 
-
-
-@madia only screen and (max-width: 768px){
-    .heading-block h1,
-        h2{
-            font-size:4em;
-            line-height:1.5;
-        }
-    .heading-block p{
-            font-size:1.5em;
-            letter-spacing:0.2em;
-        }
+/*横幅が768px以下になった際の指定*/
+@media only screen and (max-width:768px) {
+.heading-block h1,
+    h2{
+    font-size:4em;
+    line-height: 1.5;
+    }
+.heading-block p{
+    font-size:1.5em;
+    letter-spacing: 0.2em;
+    }
 }
-
 
 #box3 h2{
-    color #925410;
+    color: #925410;
 }
 
+
+/* sns icon */
 #sns-icon img{
     width: 20px;
 }
 
 #sns-icon{
     position: fixed;
-    right: 20px;
-    top: 20px;
+    right:20px;
+    top:20px;
     display: flex;
 }
 
-#sns-icon{
-    opacity:0.7;
+#sns-icon li{
+     margin:0 10px;   
 }
+
+#sns-icon a{
+    transition: all .5s;
+}
+
+#sns-icon a:hover{
+    opacity: 0.7;
+}
+
+/* profile-area*/
 
 .profile-area{
-    width: 100%
+    width:100%;
     max-width: 300px;
-    background: rgba(255,255,255,0.8);
-    padding: 40px;
+    background:rgba(255,255,255,0.8);
+    padding:40px;
     margin: 0 0 0 40px;
     text-align: left;
-    letter-spacing: 0.03em
+    letter-spacing: 0.03em;
 }
 
-@media screen and (max-width:768px){
-    .profile-area{
-        margin:0;
-    }
+@media screen and (max-width:768px) { 
+.profile-area{
+     margin:0;
+    } 
 }
+
 
 .profile-area h2{
     font-size: 0.9rem;
-    margin: 0 0 0 40px 0;
+    margin:0 0 40px 0;
     line-height: 1.8;
     color: #333;
-    font-family: 'Baskevville', serif;
+    font-family: 'Baskervville', serif;
     text-align: center;
 }
 
 .profile-area h2 span{
     font-size: 1.3rem;
-    display: block;
+     display: block;
     text-transform: uppercase;
 }
 
 .profile-area p{
-    margin: 0 0 40px 0;
+    margin:0 0 40px 0;
 }
 
+
+/* form */
+
 .form-list{
-    width: 100%;
+    width:100%;
     max-width: 500px;
     margin: 0 auto;
 }
@@ -137,39 +155,39 @@ a:active{
     margin: 50px 0;
 }
 
-@media screen and (max-width: 768px){
-    .modaal-content-container h3{
-        margin: 0 0 20px 0;
-    }
+@media screen and (max-width:768px) { 
+.modaal-content-container h3{
+    margin:0 0 20px 0;
+}   
 }
 
-input, button, textarea, select{
-    margin:0;
-    padding:0;
-    border:none;
-    background:none;
-    font-size:16px;
+input , button , textarea , select {
+	margin:0;
+	padding:0;
+	border:none;
+	outline:none;
+	background:none;
+    font-size: 16px;
 }
 
-.form-list input[type='text'],
-.form-list input[type='email'],
-.form-list txetarea{
-    width:100%;
-    border:1px solid #ccc;
-    background: #f8f9fa;
-    padding: 10px;
-    -webkit-appearance:none;
-        -moz-appearance:none;
-            appearance:none;
+.form-list input[type='text'] , 
+.form-list input[type='email'] , 
+.form-list textarea{
+	width:100%;
+	border:1px solid #ccc;
+	background:#f8f9fa;
+	padding: 10px;
+	-webkit-appearance:none;
+	   -moz-appearance:none;
+	        appearance:none;
 }
 
-.form-list input[type='text'],
-            input[type='email']{
-    height:50px;
+.form-list input[type='text'] , input[type='email'] {
+	height:50px;
 }
 
 .submit-btn{
-    width: 152px;
+    width:152px;
     margin: 0 auto;
 }
 
@@ -178,47 +196,51 @@ input[type='submit']{
     color: #fff;
     text-align: center;
     padding: 5px 20px;
-    width: 152px;
+    width:152px;
     margin: 0 auto;
 }
 
 input[type='submit']:hover{
     background: #555;
-}
+} 
 
 .form-list dl{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 0 20px 0;
+	padding:0 0 20px 0;
 }
 
 .form-list dt{
-    width: 30%;
+    width:30%;
 }
 
 .form-list dd{
-    width: 66%;
+    width:66%;
 }
 
-.form-list textarea{
-    height:200px;
+.form-list textarea {
+	height:200px;
 }
 
-@media screen and (max-width: 768px){
-    .form-list dt{
-        margin: 0 0 10px 0;
-    }
-    .form-list dt,
-    .form-list dd{
-        width: 100%;
-    }
+@media screen and (max-width:768px) {
+.form-list dt{
+	margin:0 0 10px 0;
 }
+.form-list dt,
+.form-list dd{
+    width:100%;
+}
+	
+}
+
+
+/* copyright */
 
 small{
     position: fixed;
-    left: 20px;
-    top: 40%;
+    left:20px;
+    top:40%;
     color: #fff;
     letter-spacing: 0.1em;
     line-height: 1;
@@ -226,13 +248,3 @@ small{
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
 }
-
-
-
-
-
-
-
-
-
-
